@@ -1,0 +1,15 @@
+<div class="row adj-layout">
+    <!-- <div class="col-lg-3 ">
+        <product-filter [category]="category"></product-filter>
+    </div> -->
+    <div class="col">
+        <div class="row">
+            <ng-container *ngFor="let p of filteredProducts; let i = index">
+                <div class="col-md-6 col-xl-4">
+                    <product-card [product]="p" [shopping-cart]="cart"></product-card>
+                </div>
+
+            </ng-container>
+        </div>
+    </div>
+</div>
