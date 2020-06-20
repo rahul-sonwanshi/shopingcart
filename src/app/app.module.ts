@@ -2,15 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+// Added Modules
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
-import { MatInputModule, MatPaginatorModule, MatTableModule, MatSortModule, MatIconModule, MatButtonModule } from "@angular/material";
+import { ShoppingListComponent } from './components/shopping-list/shopping-list.component';
+import { MatInputModule } from "@angular/material";
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
-import { ProductsComponent } from './products/products.component';
-import { ProductCardComponent } from './product-card/product-card.component';
+
+// Components
+import { BsNavbarComponent } from './components/bs-navbar/bs-navbar.component';
+import { ProductsComponent } from './components/products/products.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 @NgModule({
   declarations: [
