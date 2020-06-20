@@ -1,6 +1,7 @@
 .card {
     margin-bottom: 30px;
     margin-left: 20px;
+    text-align: center;
 }
 
 img {
@@ -19,4 +20,15 @@ img {
 .discount-text {
     color: green;
     font-weight: 800;
+    float: right;
+}
+
+.old-price-text {
+    text-decoration: line-through;
+    color: grey;
+    text-align: center;
+}
+
+.left-text {
+    float: left;
 }

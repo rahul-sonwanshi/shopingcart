@@ -6,6 +6,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Installing The App
+
+To Install the app to your desired directory clone the github repository by using `git clone https://github.com/rahul-sonwanshi/shopingcart` & then
+run command `npm install` now you can use Development server instruction to run the program
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

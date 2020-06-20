@@ -1,5 +1,5 @@
 <bs-navbar></bs-navbar>
 
 <div class="row">
-    <products></products>
+    <products [search]="searchValue" (searchEvent)="searchResults($event)"></products>
 </div>

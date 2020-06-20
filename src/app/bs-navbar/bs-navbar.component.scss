@@ -5,6 +5,22 @@
     margin: 0 auto;
     padding: 0;
   }
+
+  @media screen and (max-width: 750px) {
+    .search-form {
+      width: 50%;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .search-form {
+      width: 150px;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
   
   .search-full-width {
     width: 100%;
@@ -24,4 +40,24 @@
 
   .navbar {
       padding: 0 1rem;
+  }
+
+  ::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: white !important;
+   }
+
+   ::ng-deep .mat-form-field-label {
+    /*change color of label*/
+    color: white !important;
+   }
+  
+   ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: white !important;
+  } 
+  
+  ::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: white !important;;
   }

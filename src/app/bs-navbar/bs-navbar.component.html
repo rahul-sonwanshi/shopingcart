@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-md navbar-light bg-primary fixed-top">
-    <a class="navbar-brand" routerLink="/"><i class="fas fa-leaf"></i>Shopee</a>
+    <a class="navbar-brand" routerLink="/"><i class="fas fa-leaf"></i>Shop</a>
 
     <form class="search-form">
         <mat-form-field class="search-full-width">
             <mat-label>Search</mat-label>
-            <input matInput>
+            <input matInput name="searchInp" [(ngModel)]="searchValue" (input)="onSearchChange($event.target.value)">
         </mat-form-field>
     </form>
 

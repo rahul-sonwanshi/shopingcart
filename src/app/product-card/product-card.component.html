@@ -2,8 +2,9 @@
     <img *ngIf="product.img_url" [src]="product.img_url" class="card-img-top" alt="{{ product.name }}">
     <div class="card-body">
         <h5 class="card-title">{{ product.name }}</h5>
-        <span class="card-text">{{ product.price | currency:'&#8377;' }}</span>
-        <span class="card-text">{{ product.price/((100-product.discount)/100) | currency:'&#8377;' }}</span>
+        <span class="card-text left-text">{{ product.price | currency:'&#8377;': 'symbol' : '1.0-0' }}</span>
+        <span
+            class="card-text old-price-text">{{ product.price/((100-product.discount)/100) | currency:'&#8377;': 'symbol' : '1.0-0' }}</span>
         <span class="card-text discount-text">{{ product.discount}}% off</span>
     </div>
     <div *ngIf="showActions" class="card-footer">

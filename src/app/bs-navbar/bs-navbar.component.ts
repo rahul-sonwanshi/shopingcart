@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'bs-navbar',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BsNavbarComponent implements OnInit {
 
+  search: string = "abcd";
+  @Output() searchEvent = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
@@ -15,5 +17,11 @@ export class BsNavbarComponent implements OnInit {
 
   getQuantity() {
     return localStorage.getItem("cartCount");
+  }
+
+  onSearchChange(search: string) {
+    this.searchEvent.emit(search);
+    console.log(search);
+
   }
 }
