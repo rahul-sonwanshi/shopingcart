@@ -14,20 +14,6 @@ export class ProductsComponent implements OnInit {
   @Input("search") search: string;
   searchValue: string = "";
 
-  obj = {
-    value: '',
-    letMeKnow() {
-      console.log(`The variable has changed to ${this.testVar}`);
-    },
-    get testVar() {
-      return this.value;
-    },
-    set testVar(value) {
-      this.value = value;
-      this.letMeKnow();
-    }
-  }
-
   constructor(
     private productService: ProductsService,
     private shoppingCartService: ShoppingCartService
@@ -41,15 +27,6 @@ export class ProductsComponent implements OnInit {
         this.filteredProducts = data;
         console.log(this.filteredProducts);
       });
-
-    console.log(this.search);
-    console.log(this.obj.testVar)
-
-    this.obj.testVar = 5;
-    console.log(this.obj.testVar)
-
-    this.obj.testVar = 15;
-    console.log(this.obj.testVar)
   }
 
   searchResults(searchInput: string) {

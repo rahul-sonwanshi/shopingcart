@@ -5,6 +5,7 @@
         <mat-form-field class="search-full-width">
             <mat-label>Search</mat-label>
             <input matInput name="searchInp" [(ngModel)]="searchValue" (input)="onSearchChange($event.target.value)">
+            <i id="search" class="fa fa-search" aria-hidden="true"></i>
         </mat-form-field>
     </form>
 

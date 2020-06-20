@@ -21,7 +21,5 @@ export class BsNavbarComponent implements OnInit {
 
   onSearchChange(search: string) {
     this.searchEvent.emit(search);
-    console.log(search);
-
   }
 }
